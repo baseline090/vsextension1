@@ -1,0 +1,35 @@
+{
+    "name": "ashwani-raj",
+    "displayName": "Ashwani Raj",
+    "description": "A sample VS Code extension.",
+    "version": "0.0.1",
+    "publisher": "Ashwani",
+    "engines": {
+        "vscode": "^1.1.37"
+    },
+    "activationEvents": [
+        "onCommand:extension.helloWorld"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/baseline090/vsextension1"
+    },
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.helloWorld",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "scripts": {
+        "build": "tsc -p ./"
+    },
+    "devDependencies": {
+        "tslint": "^6.0.0",
+        "typescript": "^4.9.5",
+        "vsce": "^1.90.0",
+        "vscode": "^1.1.37"
+    }
+}
